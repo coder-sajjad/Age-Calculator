@@ -9,32 +9,142 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Age Calculator</title>
+    <title>Class-12 All Assignment</title>
   </head>
-  <body>
-
-
-
-    <div class="card w-25 mx-auto m-5">
-        <div class="card-title text-center">
-            <h2 class="bg-success py-2 text-white">Age Calculator</h2>
+  <body class="bg-light">
+  
+    <!-- Age Calculator -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card w-50 mx-auto shadow">
+                    <div class="card-title text-center">
+                        <h2 class="bg-success py-2 text-white">Age Calculator</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            <input id="name" class="form-control shadow-none" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input id="birthYear" class="form-control shadow-none" type="text" placeholder="Birth Year">
+                        </div>
+                        <div class="form-group">
+                            <input id="ageCheck" class="btn btn-block btn-success shadow-none" type="submit"" value="Click Me">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p id="showResult"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <div class="form-group mb-3">
-                <input id="name" class="form-control shadow-none" type="text" placeholder="Your Name">
+    </div>
+    
+
+    <!-- Regestration Form -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card w-50 mx-auto shadow">
+                    <div class="card-title">
+                        <h2 class="text-center py-2 bg-info text-white">Reggistration Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="showResult">
+
+                        </div>
+                        <form id="mainForm" action="">
+                            <div class="form-group">
+                                <input id="firstName" class="form-control shadow-none" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="username" class="form-control shadow-none" type="text" placeholder="Username">
+                                <span id="userShow"></span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="email" class="form-control shadow-none" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="password" class="form-control shadow-none" type="password" placeholder="Password">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="signUp" class="btn btn-info shadow-none w-100 font-weight-bold" type="submit" value="Sign Up">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="form-group mb-3">
-                <input id="birthYear" class="form-control shadow-none" type="text" placeholder="Birth Year">
-            </div>
-            <div class="form-group">
-                <input id="ageCheck" class="btn btn-block btn-success" type="submit"" value="Click Me">
-            </div>
-        </div>
-        <div class="card-footer">
-            <p id="showResult"></p>
         </div>
     </div>
 
+    
+    <!-- Currency Converter Calculator -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card w-50 mx-auto shadow">
+                    <div class="card-title">
+                        <h2 class="bg-primary text-white py-2 text-center">Currency Converter</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="messages">
+
+                        </div>
+                        <form id="currencyForm" action="">
+                            <div class="form-group mb-3">
+                                <input id="currencyEmail" type="email" class="form-control shadow-none" placeholder="Email Address">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="amount" type="text" class="form-control shadow-none" placeholder="Amount">
+                            </div>
+                            <div class="form-group mb-3">
+                                <select id="select"  class="form-control shadow-none" name="" id="">
+                                    <option value=""> Currency </option>
+                                    <option value="USD"> USD </option>
+                                    <option value="POUND"> POUND </option>
+                                    <option value="CAD"> CAD </option>
+                                    <option value="EURO"> EURO </option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="submit" class="btn btn-primary w-100 shadow-none font-weight-bold" value="Check Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Marriage Age check -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card w-50 mx-auto shadow">
+                    <div class="card-title">
+                        <h2 class="text-center bg-warning text-white py-2">Marriage Age Check Calculator</h2>
+                    </div>
+                    <div class="ageResult">
+
+                    </div>
+                    <div class="card-body">
+                        <form id="mAgeform" action="">
+                            <div class="form-group">
+                                <input id="marriageName" class="form-control shadow-none" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="marriageAge" class="form-control shadow-none" type="text" placeholder="Your Age">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input id="marriageButton" class="btn btn-warning shadow-none text-white w-100 font-weight-bold" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
